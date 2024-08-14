@@ -8,8 +8,8 @@ import "../globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Auth",
-  description: "Auth created App by next.js",
+  title: "Loom",
+  description: "Loom App using next.js",
 };
 
 export default function RootLayout({
