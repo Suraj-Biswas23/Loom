@@ -1,5 +1,4 @@
-// Resource: https://docs.uploadthing.com/nextjs/appdir#create-a-nextjs-api-route-using-the-filerouter
-// Copy paste (be careful with imports)
+// Resource: https://docs.uploadthing.com/getting-started/pagedir
 
 import { createNextRouteHandler } from "uploadthing/next";
 

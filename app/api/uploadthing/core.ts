@@ -1,4 +1,4 @@
-// Resource: https://docs.uploadthing.com/nextjs/appdir#creating-your-first-fileroute
+// Resource: https://docs.uploadthing.com/getting-started/appdir
 // We're changing a few things in the middleware and configs of the file upload i.e., "media", "maxFileCount"
 
 import { currentUser } from "@clerk/nextjs/server";
@@ -9,11 +9,11 @@ const f = createUploadthing();
 const getUser = async () => await currentUser();
 
 export const ourFileRouter = {
-  // Define as many FileRoutes as you like, each with a unique routeSlug
+  // Define as many FileRoutes, each with a unique routeSlug
   media: f({ image: { maxFileSize: "4MB", maxFileCount: 1 } })
     // Set permissions and file types for this FileRoute
     .middleware(async (req) => {
-      // This code runs on your server before upload
+      // This code runs on server before upload
       const user = await getUser();
 
       // If you throw, the user will not be able to upload
@@ -23,7 +23,7 @@ export const ourFileRouter = {
       return { userId: user.id };
     })
     .onUploadComplete(async ({ metadata, file }) => {
-      // This code RUNS ON YOUR SERVER after upload
+      // This code RUNS ON SERVER after upload
       console.log("Upload complete for userId:", metadata.userId);
 
       console.log("file url", file.url);
