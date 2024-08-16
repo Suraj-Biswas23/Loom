@@ -13,16 +13,16 @@ Loom is a responsive Threads clone built with Next.js 14+, featuring Server Side
 
 ## Technologies Used
 
--Next.js
--MongoDB
--Shadcn UI
--TailwindCSS
--Clerk
--Webhooks
--Serverless APIs
--React Hook Form
--Zod
--TypeScript
+- Next.js
+- MongoDB
+- Shadcn UI
+- TailwindCSS
+- Clerk
+- Webhooks
+- Serverless APIs
+- React Hook Form
+- Zod
+- TypeScript
 
 ## Getting Started
 
